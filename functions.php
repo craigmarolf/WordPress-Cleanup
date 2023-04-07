@@ -1,5 +1,12 @@
 // CLEAN UP WP-ADMIN ----------------------------------
 
+// Enqueue Admin CSS Override
+function stackpilot_admin_style(){
+	wp_register_style( 'stackpilot_admin_css', get_bloginfo('stylesheet_directory') . '/admin-style.css', false, '1.0.0' );
+	wp_enqueue_style( 'stackpilot_admin_css' );
+}
+	add_action('admin_enqueue_scripts', 'stackpilot_admin_style');
+
 // Remove WordPress links from wp-admin nav
 function remove_wp_logo( $wp_admin_bar ) {
 	$wp_admin_bar->remove_node( 'wp-logo' );

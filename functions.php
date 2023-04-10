@@ -14,7 +14,7 @@ function remove_wp_logo( $wp_admin_bar ) {
 
 // Replace WordPress thank you in admin footer
 function modify_footer_admin () {
-	echo 'Agency Kit Custom Development';
+	echo 'Custom Message Here';
 }
 	add_filter('admin_footer_text', 'modify_footer_admin');
 

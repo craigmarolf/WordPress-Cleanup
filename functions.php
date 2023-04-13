@@ -1,3 +1,4 @@
+<?php
 // CLEAN UP WP-ADMIN ----------------------------------
 
 // Enqueue Admin CSS Override
